@@ -1,0 +1,24 @@
+.nav-bar {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+
+    border: 2px solid black; 
+    padding: 5px; /* Réduit l'espace entre le contenu et le cadre */
+    margin: 0 auto; /* Centre le nav horizontalement */
+    width: 50%; /* Limite la largeur à son contenu */
+}
+
+nav a {
+    padding-left: 5%; /* Réduit l'espace interne des liens */
+    padding-right: 5%;
+    margin: 0; /* Supprime les marges autour des liens */
+}
