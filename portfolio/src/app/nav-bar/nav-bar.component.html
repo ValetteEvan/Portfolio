@@ -1,5 +1,17 @@
 <nav class="nav-bar">
-    <a>Abouts</a>
-    <a>Project</a>
-    <a>Contact</a>
+    <button (click)="setSection(NavBar.About)" [class.active]="isCurrentSection(NavBar.About)">About</button>
+    <button (click)="setSection(NavBar.Project)" [class.active]="isCurrentSection(NavBar.Project)">Project</button>
+    <button (click)="setSection(NavBar.Contact)" [class.active]="isCurrentSection(NavBar.Contact)">Contact</button>
 </nav>
+
+<div *ngIf="isCurrentSection(NavBar.About)">
+    <h1>1</h1>
+</div>
+
+<div *ngIf="isCurrentSection(NavBar.Project)">
+    <h1>2</h1>
+</div>
+
+<div *ngIf="isCurrentSection(NavBar.Contact)">
+    <h1>3</h1>
+</div>
